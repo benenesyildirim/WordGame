@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "567441076714-2uvqi8803f19pitueq50a2hmoecdauec.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.benenesyildirim.wordgame",
+            "certificate_hash": "1e132e148b8a1845b1f328a4804f4aeb0e13e59c"
+          }
+        },
+        {
           "client_id": "567441076714-eto86ihe0pb3hnarr2pl24tm079j41po.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "567441076714-eto86ihe0pb3hnarr2pl24tm079j41po.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

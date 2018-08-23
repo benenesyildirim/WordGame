@@ -1,9 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WordGame">
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="10dp"
+    tools:context=".StartScreenActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:src="@drawable/letter_b"
+            />
+
+        <ImageView
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:src="@drawable/letter_x" />
+
+        <ImageView
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:src="@drawable/letter_l" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginRight="10dp"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:text="BAKALIM !" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="25dp">
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="PLAY"
+            android:id="@+id/playButton"/>
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:text="Leader Board"
+            android:layout_marginTop="10dp"
+            android:id="@+id/leaderboardButton"/>
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:text="İnfo"
+            android:id="@+id/infoButton"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+</LinearLayout >
