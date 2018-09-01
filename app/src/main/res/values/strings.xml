@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Word Game</string>
+    <string name="create_user">Create User</string>
+    <string name="username_hint">  username</string>
+    <string name="email_hint">  email</string>
+    <string name="cancel">Cancel</string>
+    <string name="add">add</string>
+    <string name="create_user_empty_message">username or email is empty!</string>
+    <string name="welcome_to_user">Welcome %1s !</string>
+    <string name="users_last_score">Last Score:  %1s</string>
+    <string name="users_high_score">High Score: %1s</string>
+    <string name="banner_ads_id">ca-app-pub-8661505007193806/5515495226</string>
+    <string name="leader_board_table_name">Leader Board</string>
 </resources>

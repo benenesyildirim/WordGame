@@ -1,147 +1,209 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="3"
     tools:context=".GameScreen">
 
-   <RelativeLayout
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:id="@+id/topAdViewRL">
-       <com.google.android.gms.ads.AdView
-           android:id="@+id/adViewTop"
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:layout_alignParentTop="true"
-           ads:adUnitId="ca-app-pub-8661505007193806/5515495226"
-           ads:adSize="BANNER"/>
-   </RelativeLayout>
-
-    <com.google.android.gms.ads.AdView
-        android:id="@+id/adViewBottom"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        ads:adUnitId="ca-app-pub-8661505007193806/5515495226"
-        ads:adSize="BANNER"/>
+        android:layout_weight="0.5"
+        android:orientation="vertical">
 
-   <LinearLayout
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:layout_centerInParent="true"
-       android:orientation="vertical">
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adViewTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-8661505007193806/5515495226" />
 
-       <LinearLayout
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:orientation="horizontal"
-           android:layout_marginBottom="75dp"
-           android:gravity="center"
-           android:id="@+id/textBoxesLL">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#3A539B"
+            android:orientation="horizontal"
+            android:padding="7dp"
+            android:weightSum="3">
 
-           <EditText
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:textSize="50sp"
-               android:text="K"
-               android:editable="false"/>
-           <EditText
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:textSize="50sp"
-               android:text="A"
-               android:editable="false"/>
-           <EditText
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:textSize="50sp"
-               android:text="R"
-               android:editable="false"/>
-           <EditText
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:textSize="50sp"
-               android:text="P"
-               android:editable="false"/>
-           <EditText
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:textSize="50sp"
-               android:text="U"
-               android:editable="false"/>
-           <EditText
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:textSize="50sp"
-               android:text="Z"
-               android:editable="false"/>
-       </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="LEVEL\n4"
+                android:textColor="#fff"
+                android:textSize="15sp" />
 
-       <LinearLayout
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:layout_marginTop="75dp"
-           android:id="@+id/buttonsLL"
-           android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="TIME\n01:35"
+                android:textColor="#fff"
+                android:textSize="20sp" />
 
-           <GridLayout
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:columnCount="3"
-               android:layout_gravity="center"
-               android:layout_marginTop="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="SCORE\n421"
+                android:textColor="#fff"
+                android:textSize="15sp" />
 
-               <Button
-                   style="@style/Widget.AppCompat.Button.Small"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:background="#bfff0000"
-                   android:layout_margin="5dp"
-                   android:text="K"
-                   />
-               <Button
-                   style="@style/Widget.AppCompat.Button.Small"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:background="#bfff0000"
-                   android:layout_margin="5dp"
-                   android:text="R"/>
-               <Button
-                   style="@style/Widget.AppCompat.Button.Small"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:background="#bfff0000"
-                   android:layout_margin="5dp"
-                   android:text="P" />
-               <Button
-                   style="@style/Widget.AppCompat.Button.Small"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:background="#bfff0000"
-                   android:layout_margin="5dp"
-                   android:text="A"/>
-               <Button
-                   style="@style/Widget.AppCompat.Button.Small"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:background="#bfff0000"
-                   android:layout_margin="5dp"
-                   android:text="Z"/>
-               <Button
-                   style="@style/Widget.AppCompat.Button.Small"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:background="#bfff0000"
-                   android:layout_margin="5dp"
-                   android:text="U" />
+        </LinearLayout>
 
-           </GridLayout>
+    </LinearLayout>
 
-       </LinearLayout>
+    <LinearLayout
+        android:id="@+id/gameLaneLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:weightSum="2">
 
+        <LinearLayout
+            android:id="@+id/textBoxesLL"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
 
-   </LinearLayout>
-</RelativeLayout>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:text="K"
+                android:textSize="50sp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:text="A"
+                android:textSize="50sp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:text="R"
+                android:textSize="50sp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:text="P"
+                android:textSize="50sp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:text="U"
+                android:textSize="50sp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:text="Z"
+                android:textSize="50sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonsLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:columnCount="3">
+
+                <Button
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#bfff0000"
+                    android:text="K" />
+
+                <Button
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#bfff0000"
+                    android:text="R" />
+
+                <Button
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#bfff0000"
+                    android:text="P" />
+
+                <Button
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#bfff0000"
+                    android:text="A" />
+
+                <Button
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#bfff0000"
+                    android:text="Z" />
+
+                <Button
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#bfff0000"
+                    android:text="U" />
+
+            </GridLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:gravity="bottom">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adViewBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-8661505007193806/5515495226" />
+
+    </LinearLayout>
+
+</LinearLayout>

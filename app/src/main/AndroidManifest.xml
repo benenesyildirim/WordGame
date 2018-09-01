@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.benenesyildirim.wordgame">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
 
     <application
@@ -22,6 +22,8 @@
         </activity>
         <activity android:name=".StartScreenActivity" />
         <activity android:name=".GameScreen" />
+        <activity android:name=".UserAddDialog" />
+        <activity android:name=".LeaderBoardActivity"></activity>
     </application>
 
 </manifest>

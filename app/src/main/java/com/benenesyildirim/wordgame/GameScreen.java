@@ -9,15 +9,14 @@ import com.google.android.gms.ads.MobileAds;
 
 public class GameScreen extends AppCompatActivity {
 
-    private AdView adViewTop,adViewBottom;
+    private AdView adViewTop, adViewBottom;
     private AdRequest adRequest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_screen);
-        MobileAds.initialize(this, "ca-app-pub-8661505007193806/5515495226");
-
+        MobileAds.initialize(this, getString(R.string.banner_ads_id));
         initBannerAds();
     }
 

@@ -20,8 +20,9 @@ public class SplashScreen extends AppCompatActivity {
         }, 2500);
     }
 
-    public void goStartScreen(){
-        Intent splashToStartIntent = new Intent(this,StartScreenActivity.class);
+    public void goStartScreen() {
+        Intent splashToStartIntent = new Intent(this, StartScreenActivity.class);
         startActivity(splashToStartIntent);
+        finish();
     }
 }

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LeaderBoardActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#3A539B"
+        android:drawableLeft="@drawable/leaderboard_logo"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/leader_board_table_name"
+        android:textColor="#fff"
+        android:textSize="50sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/leaderboardRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/leaderboard_row_design" />
+
+</LinearLayout>

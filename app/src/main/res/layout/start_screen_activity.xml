@@ -1,75 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:layout_margin="10dp"
     tools:context=".StartScreenActivity">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="128dp"
-            android:layout_height="128dp"
-            android:src="@drawable/letter_b"
-            />
-
-        <ImageView
-            android:layout_width="128dp"
-            android:layout_height="128dp"
-            android:src="@drawable/letter_x" />
-
-        <ImageView
-            android:layout_width="128dp"
-            android:layout_height="128dp"
-            android:src="@drawable/letter_l" />
-    </LinearLayout>
-
-    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="right"
-        android:layout_marginRight="10dp"
-        android:textColor="#000"
-        android:textSize="20sp"
-        android:text="BAKALIM !" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
+        android:layout_alignParentTop="true"
         android:gravity="center"
-        android:layout_marginTop="25dp">
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="10dp"
+            android:background="#48CFAD"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/welcomeUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:textColor="#F5F7FA"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/scoresLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/usersLastScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:textColor="#F5F7FA" />
+
+                <TextView
+                    android:id="@+id/usersHighScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColor="#F5F7FA" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/logoThing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:src="@drawable/letter_b" />
+
+            <ImageView
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:src="@drawable/letter_x" />
+
+            <ImageView
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:src="@drawable/letter_l" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="BAKALIM !"
+            android:textColor="#000"
+            android:textSize="20sp" />
 
         <Button
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_width="128dp"
+            android:id="@+id/playButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="PLAY"
-            android:id="@+id/playButton"/>
-
-        <Button
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_width="128dp"
-            android:layout_height="wrap_content"
-            android:text="Leader Board"
-            android:layout_marginTop="10dp"
-            android:id="@+id/leaderboardButton"/>
-
-        <Button
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_width="128dp"
-            android:layout_height="wrap_content"
-            android:text="İnfo"
-            android:id="@+id/infoButton"
-            android:layout_marginTop="10dp"/>
+            android:textColor="#bcff0000" />
 
     </LinearLayout>
-</LinearLayout >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/leaderboardButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/leaderboard_logo" />
+
+        <Button
+            android:id="@+id/infoButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/info" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
