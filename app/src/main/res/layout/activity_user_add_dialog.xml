@@ -8,10 +8,11 @@
     android:orientation="vertical">
 
     <ImageView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:src="@drawable/logo" />
+        android:src="@drawable/user_add_dialog_top_icon"
+        android:background="#6e9e9e9e"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -21,13 +22,15 @@
         android:gravity="center"
         android:text="@string/create_user"
         android:textColor="#434A54"
-        android:textSize="30dp" />
+        android:textSize="30dp"
+        />
 
     <EditText
         android:id="@+id/usernameET"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
         android:drawableLeft="@drawable/profile_pic"
         android:hint="@string/username_hint" />
 
@@ -36,6 +39,7 @@
         android:id="@+id/emailET"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:drawableLeft="@drawable/mail"
         android:hint="@string/email_hint" />

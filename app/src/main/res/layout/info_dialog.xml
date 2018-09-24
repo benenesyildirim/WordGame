@@ -6,99 +6,109 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:gravity="center">
+        android:layout_height="wrap_content">
 
-    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginLeft="1dp"
+            android:background="#ED5565"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/infoid">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="60dp"
+                android:text="Enes Yıldırım"
+                android:textColor="#fff"
+                android:textSize="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="Android Developer"
+                android:textColor="#fff" />
 
 
-    <LinearLayout
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:background="#ED5565"
-        android:gravity="center"
-        android:orientation="vertical">
+        </LinearLayout>
 
         <ImageView
-            android:layout_width="128dp"
-            android:layout_height="128dp"
-            android:layout_marginTop="15dp"
-            android:src="@drawable/own_profile_pic" />
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/own_profile_pic"
+            android:layout_centerHorizontal="true"/>
 
-        <TextView
+    </RelativeLayout>
+
+
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Enes Yıldırım"
-            android:textColor="#fff"
-            android:textSize="30dp" />
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:gravity="center"
-            android:text="Android Developer"
-            android:textColor="#fff" />
+            <Button
+                android:id="@+id/twitterBTN"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/twitter" />
 
+            <Button
+                android:id="@+id/instagramBTN"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/instagram" />
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/linkedinBTN"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/linkedin" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center">
+            <Button
+                android:id="@+id/youtubeBTN"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/youtube" />
 
-        <Button
-            android:id="@+id/twitterBTN"
-            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:layout_margin="5dp"
-            android:background="@drawable/twitter" />
+            <Button
+                android:id="@+id/playstoreBTN"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/playstore" />
 
-        <Button
-            android:id="@+id/instagramBTN"
-            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:layout_margin="10dp"
-            android:background="@drawable/instagram" />
+            <Button
+                android:id="@+id/internetBTN"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/internet" />
 
-        <Button
-            android:id="@+id/linkedinBTN"
-            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:layout_margin="10dp"
-            android:background="@drawable/linkedin" />
-
-        <Button
-            android:id="@+id/youtubeBTN"
-            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:layout_margin="10dp"
-            android:background="@drawable/youtube" />
-
-        <Button
-            android:id="@+id/playstoreBTN"
-            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:layout_margin="10dp"
-            android:background="@drawable/playstore" />
-
-        <Button
-            android:id="@+id/internetBTN"
-            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:layout_margin="10dp"
-            android:background="@drawable/internet" />
-
-    </LinearLayout>
+        </LinearLayout>
 
 </LinearLayout>

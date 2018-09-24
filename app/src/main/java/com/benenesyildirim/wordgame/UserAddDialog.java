@@ -23,9 +23,7 @@ public class UserAddDialog extends Dialog implements View.OnClickListener {
     private EditText userNameET, emailET;
     private Button addBTN, cancelBTN;
     private FirebaseDatabase firebaseDatabase;
-    private SharedPreferences savedData;
     private String usernameEtData, emailEtData;
-    private boolean isUserCreated = false;
 
     public UserAddDialog(@NonNull Context context) {
         super(context);
@@ -35,7 +33,7 @@ public class UserAddDialog extends Dialog implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_add_dialog);
-        savedData = getContext().getSharedPreferences("savedUserID", MODE_PRIVATE);
+        SharedPreferences savedData = getContext().getSharedPreferences("savedUserID", MODE_PRIVATE);
         initViewsAndFirebase();
     }
 
@@ -78,10 +76,10 @@ public class UserAddDialog extends Dialog implements View.OnClickListener {
         editor.putString("userID", userID);
         editor.apply();
 
-        UserProperties user = new UserProperties(usernameEtData, emailEtData, "lastScore", "highScore", "highScore");
+        UserProperties user = new UserProperties(usernameEtData, emailEtData, 0,  0);
         firebaseDatabase.getReference("users").child(userID).setValue(user);
 
         dismiss();
-        isUserCreated = true;
+
     }
 }

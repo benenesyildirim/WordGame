@@ -4,17 +4,16 @@ import java.io.Serializable;
 
 public class UserProperties implements Serializable {
 
-    private String username, userEmail, lastScore, totalScore, highScore;
+    private String username, userEmail;
+    private int lastScore, highScore;
 
     public UserProperties() {
-
     }
 
-    public UserProperties(String username, String userEmail, String lastScore, String totalScore, String highScore) {
+    public UserProperties(String username, String userEmail, int lastScore, int highScore) {
         this.username = username;
         this.userEmail = userEmail;
         this.lastScore = lastScore;
-        this.totalScore = totalScore;
         this.highScore = highScore;
     }
 
@@ -34,27 +33,19 @@ public class UserProperties implements Serializable {
         this.userEmail = userEmail;
     }
 
-    public String getLastScore() {
+    public int getLastScore() {
         return lastScore;
     }
 
-    public void setLastScore(String lastScore) {
+    public void setLastScore(int lastScore) {
         this.lastScore = lastScore;
     }
 
-    public String getTotalScore() {
-        return totalScore;
-    }
-
-    public void setTotalScore(String totalScore) {
-        this.totalScore = totalScore;
-    }
-
-    public String getHighScore() {
+    public int getHighScore() {
         return highScore;
     }
 
-    public void setHighScore(String highScore) {
+    public void setHighScore(int highScore) {
         this.highScore = highScore;
     }
 }

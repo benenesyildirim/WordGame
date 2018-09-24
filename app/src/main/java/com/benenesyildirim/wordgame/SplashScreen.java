@@ -1,6 +1,7 @@
 package com.benenesyildirim.wordgame;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -18,6 +19,8 @@ public class SplashScreen extends AppCompatActivity {
                 goStartScreen();
             }
         }, 2500);
+
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
     }
 
     public void goStartScreen() {

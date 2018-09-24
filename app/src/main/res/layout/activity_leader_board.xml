@@ -12,7 +12,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:background="#3A539B"
-        android:drawableLeft="@drawable/leaderboard_logo"
+        android:drawableLeft="@drawable/leaderboard_top_icon"
         android:gravity="center"
         android:padding="10dp"
         android:text="@string/leader_board_table_name"

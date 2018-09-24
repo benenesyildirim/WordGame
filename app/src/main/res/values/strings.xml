@@ -7,8 +7,15 @@
     <string name="add">add</string>
     <string name="create_user_empty_message">username or email is empty!</string>
     <string name="welcome_to_user">Welcome %1s !</string>
-    <string name="users_last_score">Last Score:  %1s</string>
-    <string name="users_high_score">High Score: %1s</string>
+    <string name="users_last_score">Last Score\n%1s</string>
+    <string name="users_high_score">High Score\n%1s</string>
     <string name="banner_ads_id">ca-app-pub-8661505007193806/5515495226</string>
     <string name="leader_board_table_name">Leader Board</string>
+    <string name="level">LEVEL\n%1d</string>
+    <string name="score">SCORE\n%1d</string>
+    <string name="time">TIME\n%1d</string>
+    <string name="gameOver">GAME OVER</string>
+    <string name="word_was">Word Was: %1s</string>
+    <string name="dialog_score">Score: %1d</string>
+    <string name="dialog_high_score">High Score: %1d</string>
 </resources>

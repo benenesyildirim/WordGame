@@ -10,13 +10,14 @@ import android.widget.TextView;
 
 import java.util.List;
 
-public class LeaderboardListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+public class LeaderboardListAdapter /*extends RecyclerView.Adapter<RecyclerView.ViewHolder> */{
 
-    private List<String> leaderBoardList;
+    /*private List<String> leaderBoardList;
     private Context context;
 
-    LeaderboardListAdapter(Context context) {
+    LeaderboardListAdapter(Context context, List<String> leaderBoardList) {
         this.context = context;
+        this.leaderBoardList = leaderBoardList;
     }
 
     @NonNull
@@ -50,5 +51,5 @@ public class LeaderboardListAdapter extends RecyclerView.Adapter<RecyclerView.Vi
             userName = v.findViewById(R.id.usernameLeaderboard);
             userScore = v.findViewById(R.id.userScoreLeaderboard);
         }
-    }
+    }*/
 }
